@@ -1,0 +1,30 @@
+/* Styling untuk breadcrumb */
+.breadcrumb {
+  background-color: #f8f9fa;
+  padding: 8px 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling untuk link breadcrumb */
+.breadcrumb a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.breadcrumb a:hover {
+  color: #0056b3;
+}
+
+/* Styling untuk tanda pemisah (tanda /) */
+.breadcrumb .separator {
+  margin: 0 5px;
+  color: #868e96;
+}
+
+/* Styling untuk segmen terakhir (tidak berupa link) */
+.breadcrumb .last-segment {
+  color: #343a40;
+  font-weight: bold;
+}

@@ -1,0 +1,43 @@
+table.table {
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+  border-collapse: collapse;
+  border: 1px solid #dee2e6;
+  margin-top: 20px;
+}
+
+table.table th,
+table.table td {
+  border: 1px solid #dee2e6;
+  padding: 8px;
+}
+
+table.table th {
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+/* Gaya untuk form filter */
+form {
+  margin-bottom: 20px;
+}
+
+/* Gaya untuk tombol Apply Filter */
+button.btn-primary {
+  margin-top: 10px;
+}
+
+/* Gaya untuk halaman report */
+.container {
+  padding: 20px;
+}
+
+/* Gunakan media query untuk menyesuaikan tampilan saat layar lebih kecil */
+@media (max-width: 767px) {
+  table.table {
+    font-size: 14px; /* Perkecil ukuran font pada layar kecil */
+  }
+}
+
+/*# sourceMappingURL=report.css.map */

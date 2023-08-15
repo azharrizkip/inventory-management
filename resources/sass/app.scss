@@ -1,0 +1,77 @@
+// Fonts
+@import url('https://fonts.bunny.net/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+// import Font Awesome
+@import "@fortawesome/fontawesome-free/css/all.css";
+
+
+#sidebar {
+  min-width: 250px;
+  max-width: 250px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  transition: all 0.3s;
+  z-index: 1000;
+  background-color: #37474F;
+  color: white;
+  padding: 1rem;
+}
+
+#sidebar.active {
+  left: 0;
+}
+
+#content {
+  margin-left: 250px;
+  transition: all 0.3s;
+  width: calc(100% - 250px);
+  margin-left: 0;
+}
+
+#sidebar.active ~ #content {
+  margin-left: 250px;
+}
+
+.list-unstyled.components li a {
+  padding: 10px;
+  font-size: 1.1em;
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+.list-unstyled.components li a i {
+  margin-right: 10px;
+  width: 20px;
+  text-align: center;
+}
+
+.list-unstyled.components .active > a,
+.list-unstyled.components .active > a:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.list-unstyled.components li > a:hover {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.navbar > .container {
+  padding: 0;
+}
+
+input[readonly] {
+  background-color: #f2f2f2;
+  color: #999;
+  border: 1px solid #ddd;
+  cursor: not-allowed;
+}
